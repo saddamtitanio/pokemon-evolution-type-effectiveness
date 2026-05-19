@@ -1,3 +1,4 @@
+// TODO: display all the features in the web app
 import Image from "next/image";
 
 export default function Home() {

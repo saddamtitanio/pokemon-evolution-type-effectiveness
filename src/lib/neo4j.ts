@@ -1,19 +1,28 @@
-import neo4j from 'neo4j-driver';
+import dotenv from "dotenv";
+dotenv.config({ path: ".env.local" });
 
-const URI = process.env.NEO4J_URI as string;
-const USER = process.env.NEO4J_USER as string;
-const PASSWORD = process.env.NEO4J_PASSWORD as string;
+import neo4j from "neo4j-driver";
 
-export const driver = neo4j.driver(URI, neo4j.auth.basic(USER, PASSWORD));
+const uri = process.env.NEO4J_URI;
+const username = process.env.NEO4J_USERNAME;
+const password = process.env.NEO4J_PASSWORD;
 
-export const testConnection = async () => {
+if (!uri || !username || !password) {
+  throw new Error("Missing Neo4j environment variables");
+}
+
+export const driver = neo4j.driver(
+  uri,
+  neo4j.auth.basic(username, password)
+);
+
+async function test() {
   try {
-    const serverInfo = await driver.getServerInfo();
-    console.log('Connection established');
-    console.log(serverInfo);
-  } catch (err) {
-    console.error('Neo4j connection error:', err);
-  } finally {
-    await driver.close();
+    await driver.verifyConnectivity();
+    console.log("Neo4j connected");
+  } catch (error) {
+    console.error(error);
   }
-};
+}
+
+test();
