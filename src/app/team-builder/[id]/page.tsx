@@ -1,0 +1,1 @@
+// TODO: display the team (pokemon roster) based on the ID and allow edit, update, delete

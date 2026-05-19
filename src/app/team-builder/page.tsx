@@ -1,0 +1,1 @@
+// TODO: show list of teams that have been created and a “Create New Team” button option, and navigate to the specific team page when one of them is clicked
