@@ -9,48 +9,57 @@ const session = driver.session();
 
 const pokedex = JSON.parse(
   fs.readFileSync(
-    path.join(process.cwd(), "scripts/data/pokedex.json"),
+    path.join(process.cwd(), "benchmarks/scripts/data/pokedex.json"),
     "utf-8"
   )
 );
 
 async function seed() {
-  const edges: { from: string; to: string }[] = [];
+  const edges: { from: number; to: number }[] = [];
 
   // CREATE ALL POKEMON NODES
   for (const p of pokedex) {
-    const name = p.name?.english?.toLowerCase();
-    if (!name) continue;
-
     await session.run(
-      `MERGE (p:Pokemon {name: $name})`,
-      { name }
+      `
+      MERGE (pokemon:Pokemon {id: $id})
+      SET
+        pokemon.name = $name,
+        pokemon.image = $image,
+        pokemon.description = $description,
+        pokemon.species = $species
+      `,
+      {
+        id: p.id,
+        name: p.name?.english?.toLowerCase(),
+        image: p.image?.hires ?? null,
+        description: p.description ?? null,
+        species: p.species ?? null,
+      }
     );
   }
 
   // BUILD EVOLUTION EDGES
   for (const p of pokedex) {
-    const from = p.name?.english?.toLowerCase();
-    if (!from) continue;
+    if (!p.evolution?.next) continue;
 
-    if (p.evolution?.next) {
-      for (const evo of p.evolution.next) {
-        const to = evo?.name;
-        if (!to) continue;
+    for (const evo of p.evolution.next) {
+      const evoId = Number(evo[0]);
 
-        edges.push({
-          from,
-          to: to.toLowerCase(),
-        });
-      }
+      if (!evoId) continue;
+
+      edges.push({
+        from: p.id,
+        to: evoId,
+      });
     }
   }
 
+  // CREATE EVOLUTION RELATIONSHIPS
   await session.run(
     `
     UNWIND $edges AS edge
-    MATCH (a:Pokemon {name: edge.from})
-    MATCH (b:Pokemon {name: edge.to})
+    MATCH (a:Pokemon {id: edge.from})
+    MATCH (b:Pokemon {id: edge.to})
     MERGE (a)-[:EVOLVES_TO]->(b)
     `,
     { edges }
@@ -81,38 +90,74 @@ async function seed() {
   };
 
   for (const [type, data] of Object.entries(TYPE_CHART)) {
+    // CREATE TYPE NODE
     await session.run(
       `
       MERGE (t:Type {name: $type})
-
-      WITH t
-      UNWIND $strongAgainst AS target
-      MERGE (b:Type {name: target})
-      MERGE (t)-[:STRONG_AGAINST]->(b)
-
-      WITH t
-      UNWIND $weakAgainst AS target
-      MERGE (b:Type {name: target})
-      MERGE (t)-[:WEAK_AGAINST]->(b)
-
-      WITH t
-      UNWIND $noEffectOn AS target
-      MERGE (b:Type {name: target})
-      MERGE (t)-[:NO_EFFECT_ON]->(b)
       `,
-      {
-        type,
-        strongAgainst: data.strongAgainst,
-        weakAgainst: data.weakAgainst,
-        noEffectOn: data.noEffectOn
-      }
+      { type }
     );
+
+    // STRONG_AGAINST
+    if (data.strongAgainst.length > 0) {
+      await session.run(
+        `
+        MATCH (t:Type {name: $type})
+        UNWIND $targets AS target
+        MERGE (b:Type {name: target})
+        MERGE (t)-[:STRONG_AGAINST]->(b)
+        `,
+        {
+          type,
+          targets: data.strongAgainst,
+        }
+      );
+    }
+
+    // WEAK_AGAINST
+    if (data.weakAgainst.length > 0) {
+      await session.run(
+        `
+        MATCH (t:Type {name: $type})
+        UNWIND $targets AS target
+        MERGE (b:Type {name: target})
+        MERGE (t)-[:WEAK_AGAINST]->(b)
+        `,
+        {
+          type,
+          targets: data.weakAgainst,
+        }
+      );
+    }
+
+    // NO_EFFECT_ON
+    if (data.noEffectOn.length > 0) {
+      await session.run(
+        `
+        MATCH (t:Type {name: $type})
+        UNWIND $targets AS target
+        MERGE (b:Type {name: target})
+        MERGE (t)-[:NO_EFFECT_ON]->(b)
+        `,
+        {
+          type,
+          targets: data.noEffectOn,
+        }
+      );
+    }
   }
 
   console.log("Neo4j type graph built");
 
-  const count = await session.run(`MATCH (n) RETURN count(n) AS total`);
-  console.log("Total nodes:", count.records[0].get("total").toNumber());
+  const count = await session.run(`
+    MATCH (n)
+    RETURN count(n) AS total
+  `);
+
+  console.log(
+    "Total nodes:",
+    count.records[0].get("total").toNumber()
+  );
 
   await session.close();
   await driver.close();

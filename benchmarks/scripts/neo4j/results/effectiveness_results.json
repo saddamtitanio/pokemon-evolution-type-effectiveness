@@ -1,0 +1,435 @@
+[
+  {
+    "type": "Normal",
+    "result": [
+      {
+        "type": "Normal",
+        "strong": [],
+        "weak": [
+          "rock",
+          "steel"
+        ],
+        "noEffect": [
+          "ghost"
+        ]
+      }
+    ],
+    "name": "effectiveness-Normal",
+    "median": 205.01673800000026,
+    "p95": 409.6658150000003,
+    "mean": 221.28233987999994
+  },
+  {
+    "type": "Fire",
+    "result": [
+      {
+        "type": "Fire",
+        "strong": [
+          "grass",
+          "ice",
+          "bug",
+          "steel"
+        ],
+        "weak": [
+          "water",
+          "rock",
+          "dragon",
+          "fire"
+        ],
+        "noEffect": []
+      }
+    ],
+    "name": "effectiveness-Fire",
+    "median": 109.69977900000231,
+    "p95": 372.3898939999999,
+    "mean": 161.77044585999988
+  },
+  {
+    "type": "Water",
+    "result": [
+      {
+        "type": "Water",
+        "strong": [
+          "fire",
+          "ground",
+          "rock"
+        ],
+        "weak": [
+          "grass",
+          "dragon",
+          "water"
+        ],
+        "noEffect": []
+      }
+    ],
+    "name": "effectiveness-Water",
+    "median": 165.36651500000153,
+    "p95": 334.98921899999914,
+    "mean": 165.12155657999995
+  },
+  {
+    "type": "Grass",
+    "result": [
+      {
+        "type": "Grass",
+        "strong": [
+          "water",
+          "ground",
+          "rock"
+        ],
+        "weak": [
+          "fire",
+          "poison",
+          "flying",
+          "bug",
+          "dragon",
+          "steel",
+          "grass"
+        ],
+        "noEffect": []
+      }
+    ],
+    "name": "effectiveness-Grass",
+    "median": 104.13699500000075,
+    "p95": 306.7897359999988,
+    "mean": 139.46354758
+  },
+  {
+    "type": "Electric",
+    "result": [
+      {
+        "type": "Electric",
+        "strong": [
+          "water",
+          "flying"
+        ],
+        "weak": [
+          "grass",
+          "dragon",
+          "electric"
+        ],
+        "noEffect": [
+          "ground"
+        ]
+      }
+    ],
+    "name": "effectiveness-Electric",
+    "median": 103.4706010000009,
+    "p95": 282.558302999998,
+    "mean": 141.1967414999995
+  },
+  {
+    "type": "Ice",
+    "result": [
+      {
+        "type": "Ice",
+        "strong": [
+          "grass",
+          "ground",
+          "flying",
+          "dragon"
+        ],
+        "weak": [
+          "fire",
+          "water",
+          "steel",
+          "ice"
+        ],
+        "noEffect": []
+      }
+    ],
+    "name": "effectiveness-Ice",
+    "median": 105.01711899999646,
+    "p95": 300.72051400000055,
+    "mean": 147.42354285999988
+  },
+  {
+    "type": "Fighting",
+    "result": [
+      {
+        "type": "Fighting",
+        "strong": [
+          "normal",
+          "ice",
+          "rock",
+          "dark",
+          "steel"
+        ],
+        "weak": [
+          "poison",
+          "flying",
+          "psychic",
+          "bug",
+          "fairy"
+        ],
+        "noEffect": [
+          "ghost"
+        ]
+      }
+    ],
+    "name": "effectiveness-Fighting",
+    "median": 107.34361599999829,
+    "p95": 307.63401399999566,
+    "mean": 151.6470196000002
+  },
+  {
+    "type": "Poison",
+    "result": [
+      {
+        "type": "Poison",
+        "strong": [
+          "grass",
+          "fairy"
+        ],
+        "weak": [
+          "ground",
+          "rock",
+          "ghost",
+          "poison"
+        ],
+        "noEffect": [
+          "steel"
+        ]
+      }
+    ],
+    "name": "effectiveness-Poison",
+    "median": 192.66069999999308,
+    "p95": 410.12103800001205,
+    "mean": 184.97599581999938
+  },
+  {
+    "type": "Ground",
+    "result": [
+      {
+        "type": "Ground",
+        "strong": [
+          "fire",
+          "electric",
+          "poison",
+          "rock",
+          "steel"
+        ],
+        "weak": [
+          "grass",
+          "bug"
+        ],
+        "noEffect": [
+          "flying"
+        ]
+      }
+    ],
+    "name": "effectiveness-Ground",
+    "median": 205.15018900000723,
+    "p95": 409.63089000000036,
+    "mean": 211.00138958000025
+  },
+  {
+    "type": "Flying",
+    "result": [
+      {
+        "type": "Flying",
+        "strong": [
+          "grass",
+          "fighting",
+          "bug"
+        ],
+        "weak": [
+          "electric",
+          "rock",
+          "steel"
+        ],
+        "noEffect": []
+      }
+    ],
+    "name": "effectiveness-Flying",
+    "median": 204.88562800000363,
+    "p95": 411.04031399999803,
+    "mean": 220.82476132000068
+  },
+  {
+    "type": "Psychic",
+    "result": [
+      {
+        "type": "Psychic",
+        "strong": [
+          "fighting",
+          "poison"
+        ],
+        "weak": [
+          "steel",
+          "psychic"
+        ],
+        "noEffect": [
+          "dark"
+        ]
+      }
+    ],
+    "name": "effectiveness-Psychic",
+    "median": 203.827535000004,
+    "p95": 411.8349540000054,
+    "mean": 219.12022986000025
+  },
+  {
+    "type": "Bug",
+    "result": [
+      {
+        "type": "Bug",
+        "strong": [
+          "grass",
+          "psychic",
+          "dark"
+        ],
+        "weak": [
+          "fire",
+          "fighting",
+          "poison",
+          "flying",
+          "ghost",
+          "steel",
+          "fairy"
+        ],
+        "noEffect": []
+      }
+    ],
+    "name": "effectiveness-Bug",
+    "median": 204.0873930000089,
+    "p95": 411.2143789999973,
+    "mean": 205.00967170000075
+  },
+  {
+    "type": "Rock",
+    "result": [
+      {
+        "type": "Rock",
+        "strong": [
+          "fire",
+          "ice",
+          "flying",
+          "bug"
+        ],
+        "weak": [
+          "fighting",
+          "ground",
+          "steel"
+        ],
+        "noEffect": []
+      }
+    ],
+    "name": "effectiveness-Rock",
+    "median": 205.84383300000627,
+    "p95": 377.74798099999316,
+    "mean": 221.23824639999947
+  },
+  {
+    "type": "Ghost",
+    "result": [
+      {
+        "type": "Ghost",
+        "strong": [
+          "psychic",
+          "ghost"
+        ],
+        "weak": [
+          "dark"
+        ],
+        "noEffect": [
+          "normal"
+        ]
+      }
+    ],
+    "name": "effectiveness-Ghost",
+    "median": 204.6854100000055,
+    "p95": 417.4603980000247,
+    "mean": 218.52197060000267
+  },
+  {
+    "type": "Dragon",
+    "result": [
+      {
+        "type": "Dragon",
+        "strong": [
+          "dragon"
+        ],
+        "weak": [
+          "steel"
+        ],
+        "noEffect": [
+          "fairy"
+        ]
+      }
+    ],
+    "name": "effectiveness-Dragon",
+    "median": 204.4374339999922,
+    "p95": 412.704510999989,
+    "mean": 213.03030611999856
+  },
+  {
+    "type": "Dark",
+    "result": [
+      {
+        "type": "Dark",
+        "strong": [
+          "psychic",
+          "ghost"
+        ],
+        "weak": [
+          "fighting",
+          "fairy",
+          "dark"
+        ],
+        "noEffect": []
+      }
+    ],
+    "name": "effectiveness-Dark",
+    "median": 204.40864700000384,
+    "p95": 408.783918000001,
+    "mean": 192.57078708000014
+  },
+  {
+    "type": "Steel",
+    "result": [
+      {
+        "type": "Steel",
+        "strong": [
+          "ice",
+          "rock",
+          "fairy"
+        ],
+        "weak": [
+          "fire",
+          "water",
+          "electric",
+          "steel"
+        ],
+        "noEffect": []
+      }
+    ],
+    "name": "effectiveness-Steel",
+    "median": 204.19328700000187,
+    "p95": 306.382850999973,
+    "mean": 196.8439178399992
+  },
+  {
+    "type": "Fairy",
+    "result": [
+      {
+        "type": "Fairy",
+        "strong": [
+          "fighting",
+          "dragon",
+          "dark"
+        ],
+        "weak": [
+          "fire",
+          "poison",
+          "steel"
+        ],
+        "noEffect": []
+      }
+    ],
+    "name": "effectiveness-Fairy",
+    "median": 103.93616300000576,
+    "p95": 297.42654099999345,
+    "mean": 139.59823222000267
+  }
+]
