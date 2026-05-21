@@ -1,0 +1,327 @@
+[
+  {
+    "team": [
+      "Charizard",
+      "Dragonite",
+      "Garchomp",
+      "Lucario",
+      "Blastoise",
+      "Clefable"
+    ],
+    "result": [
+      {
+        "weak_against": [
+          "water",
+          "rock",
+          "dragon",
+          "fire",
+          "grass",
+          "electric",
+          "steel"
+        ],
+        "strong_against": [
+          "grass",
+          "ice",
+          "bug",
+          "steel",
+          "fire",
+          "ground",
+          "rock",
+          "fighting",
+          "dragon"
+        ],
+        "no_effect": [
+          "fairy"
+        ]
+      }
+    ],
+    "name": "validation-Charizard-Dragonite-Garchomp-Lucario-Blastoise-Clefable",
+    "median": 204.43542700000035,
+    "p95": 417.34903900000063,
+    "mean": 229.41005313999995
+  },
+  {
+    "team": [
+      "Pikachu",
+      "pikachu",
+      "Pikachu",
+      "Raichu"
+    ],
+    "result": [
+      {
+        "weak_against": [
+          "grass",
+          "dragon",
+          "electric"
+        ],
+        "strong_against": [
+          "water",
+          "flying"
+        ],
+        "no_effect": [
+          "ground"
+        ]
+      }
+    ],
+    "name": "validation-Pikachu-pikachu-Pikachu-Raichu",
+    "median": 204.89509399999952,
+    "p95": 413.08880900000077,
+    "mean": 221.10195779999967
+  },
+  {
+    "team": [
+      "Charizard",
+      "NotAPokemon",
+      "FakeMon",
+      "Garchomp"
+    ],
+    "result": [
+      {
+        "weak_against": [
+          "water",
+          "rock",
+          "dragon",
+          "fire",
+          "electric",
+          "steel"
+        ],
+        "strong_against": [
+          "grass",
+          "ice",
+          "bug",
+          "steel",
+          "fighting"
+        ],
+        "no_effect": []
+      }
+    ],
+    "name": "validation-Charizard-NotAPokemon-FakeMon-Garchomp",
+    "median": 204.37290300000313,
+    "p95": 409.4906239999982,
+    "mean": 208.76372428000002
+  },
+  {
+    "team": [
+      "Bulbasaur",
+      "Ivysaur",
+      "Venusaur",
+      "Charmander",
+      "Charmeleon",
+      "Charizard",
+      "Squirtle"
+    ],
+    "result": [
+      {
+        "weak_against": [
+          "water",
+          "rock",
+          "dragon",
+          "fire",
+          "grass",
+          "poison",
+          "flying",
+          "bug",
+          "steel",
+          "ground",
+          "ghost",
+          "electric"
+        ],
+        "strong_against": [
+          "grass",
+          "ice",
+          "bug",
+          "steel",
+          "fire",
+          "ground",
+          "rock",
+          "water",
+          "fairy",
+          "fighting"
+        ],
+        "no_effect": [
+          "steel"
+        ]
+      }
+    ],
+    "name": "validation-Bulbasaur-Ivysaur-Venusaur-Charmander-Charmeleon-Charizard-Squirtle",
+    "median": 204.23044300000038,
+    "p95": 403.2361410000012,
+    "mean": 213.00712671999952
+  },
+  {
+    "team": [
+      "dragonite",
+      "DRAGONITE",
+      "Dragonite",
+      "Garchomp"
+    ],
+    "result": [
+      {
+        "weak_against": [
+          "electric",
+          "rock",
+          "steel"
+        ],
+        "strong_against": [
+          "grass",
+          "fighting",
+          "bug",
+          "dragon"
+        ],
+        "no_effect": [
+          "fairy"
+        ]
+      }
+    ],
+    "name": "validation-dragonite-DRAGONITE-Dragonite-Garchomp",
+    "median": 210.71134700000403,
+    "p95": 616.0253089999896,
+    "mean": 286.7318395599995
+  },
+  {
+    "team": [
+      "Lapras",
+      "Weavile",
+      "Mamoswine",
+      "Glaceon",
+      "Froslass"
+    ],
+    "result": [
+      {
+        "weak_against": [
+          "fire",
+          "water",
+          "steel",
+          "ice"
+        ],
+        "strong_against": [
+          "grass",
+          "ground",
+          "flying",
+          "dragon"
+        ],
+        "no_effect": []
+      }
+    ],
+    "name": "validation-Lapras-Weavile-Mamoswine-Glaceon-Froslass",
+    "median": 202.58594599999196,
+    "p95": 606.0182029999996,
+    "mean": 229.32851625999902
+  },
+  {
+    "team": [
+      "Toxapex",
+      "Ferrothorn",
+      "Skarmory",
+      "Blissey",
+      "Corviknight",
+      "Aegislash"
+    ],
+    "result": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "name": "validation-Toxapex-Ferrothorn-Skarmory-Blissey-Corviknight-Aegislash",
+    "median": 204.63511999999173,
+    "p95": 516.9395340000046,
+    "mean": 218.97482821999992
+  },
+  {
+    "team": [
+      "Charizard",
+      "Arcanine",
+      "Infernape",
+      "Blaziken",
+      "Talonflame",
+      "Volcarona"
+    ],
+    "result": [
+      {
+        "weak_against": [
+          "water",
+          "rock",
+          "dragon",
+          "fire",
+          "electric",
+          "steel"
+        ],
+        "strong_against": [
+          "grass",
+          "ice",
+          "bug",
+          "steel",
+          "fighting"
+        ],
+        "no_effect": []
+      }
+    ],
+    "name": "validation-Charizard-Arcanine-Infernape-Blaziken-Talonflame-Volcarona",
+    "median": 204.53778200001398,
+    "p95": 613.9456990000035,
+    "mean": 237.65696781999955
+  },
+  {
+    "team": [
+      "Pikachu",
+      "Jolteon",
+      "Raichu",
+      "Zapdos",
+      "Magnezone",
+      "Electivire"
+    ],
+    "result": [
+      {
+        "weak_against": [
+          "grass",
+          "dragon",
+          "electric"
+        ],
+        "strong_against": [
+          "water",
+          "flying"
+        ],
+        "no_effect": [
+          "ground"
+        ]
+      }
+    ],
+    "name": "validation-Pikachu-Jolteon-Raichu-Zapdos-Magnezone-Electivire",
+    "median": 204.37583999999333,
+    "p95": 407.8770179999992,
+    "mean": 209.01527358000138
+  },
+  {
+    "team": [
+      "Mew",
+      "Arceus",
+      "Ditto",
+      "Eevee",
+      "MissingNo",
+      "Smeargle"
+    ],
+    "result": [
+      {
+        "weak_against": [
+          "rock",
+          "steel",
+          "psychic"
+        ],
+        "strong_against": [
+          "fighting",
+          "poison"
+        ],
+        "no_effect": [
+          "ghost",
+          "dark"
+        ]
+      }
+    ],
+    "name": "validation-Mew-Arceus-Ditto-Eevee-MissingNo-Smeargle",
+    "median": 203.64043099997798,
+    "p95": 527.0606459999981,
+    "mean": 227.3168449000013
+  }
+]

@@ -20,53 +20,37 @@ export async function GET(
         // Query to fetch the full evolution chain
         const result = await session.run(
         `
-        // Find the base pokemon in the evolution chain (pokemon that nothing evolves into)
         MATCH (base:Pokemon)
 
         WHERE NOT (:Pokemon)-[:EVOLVES_TO]->(base)
-
-            // Check if:
-            // The base Pokemon itself matches the searched name or
-            // The searched Pokemon exists somewhere in the chain
             AND (
-                base.name = $name
-                OR (base)-[:EVOLVES_TO*]->(:Pokemon {name: $name})
+            toLower(base.name) = toLower($name)
+            OR (base)-[:EVOLVES_TO*]->(:Pokemon {name: $name})
             )
 
-        // Get the full evolution path from the base Pokemon
         MATCH path = (base)-[:EVOLVES_TO*0..]->(member:Pokemon)
 
-        // Collect all poemon nodes in the chain
-        WITH collect(DISTINCT {
-
-            // Pokemon name
-            name: member.name,
-
-            // Pokemon ID number
+        WITH
+            collect(DISTINCT {
             id: member.id,
+            name: member.name,
+            image: member.image,
+            species: member.species
+            }) AS nodes,
 
-            // Pokemon types
-            types: member.types
-
-        }) AS nodes,
-
-        // Collect evolution relationships between pokemon
-        collect(DISTINCT {
-
-            // Starting Pokemon in the evolution
-            from: startNode(last(relationships(path))).name,
-
-            // Evolved Pokemon
-            to: endNode(last(relationships(path))).name,
-
-            // Evolution level in the chain
-            level: length(path)
-
-        }) AS edges
+            [
+            p IN collect(path)
+            WHERE length(p) > 0
+            | {
+                from: startNode(last(relationships(p))).id,
+                to: endNode(last(relationships(p))).id,
+                level: length(p)
+                }
+            ] AS edges
 
         RETURN nodes, edges
         `,
-        { name }
+        { name: name.toLowerCase() }
         );
 
         // If no evolution data is found, return 404 error

@@ -1,0 +1,242 @@
+[
+  {
+    "team": [
+      "Charizard",
+      "Dragonite",
+      "Salamence",
+      "Garchomp",
+      "Hydreigon",
+      "Goodra"
+    ],
+    "team_size": 6,
+    "weaknesses": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "benchmark": {
+      "name": "weakness-Charizard-Dragonite-Salamence-Garchomp-Hydreigon-Goodra",
+      "median": 102.53472599999986,
+      "p95": 105.22244999999975,
+      "mean": 102.50747495999993
+    }
+  },
+  {
+    "team": [
+      "Blastoise",
+      "Swampert",
+      "Milotic",
+      "Lapras",
+      "Toxapex",
+      "Vaporeon"
+    ],
+    "team_size": 6,
+    "weaknesses": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "benchmark": {
+      "name": "weakness-Blastoise-Swampert-Milotic-Lapras-Toxapex-Vaporeon",
+      "median": 102.73071400000117,
+      "p95": 246.56329799999912,
+      "mean": 130.9171047000001
+    }
+  },
+  {
+    "team": [
+      "Pikachu",
+      "Raichu",
+      "Zapdos",
+      "Electivire",
+      "Magnezone",
+      "Luxray"
+    ],
+    "team_size": 6,
+    "weaknesses": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "benchmark": {
+      "name": "weakness-Pikachu-Raichu-Zapdos-Electivire-Magnezone-Luxray",
+      "median": 102.62521600000036,
+      "p95": 147.42281400000138,
+      "mean": 103.76619256000009
+    }
+  },
+  {
+    "team": [
+      "Charizard",
+      "Arcanine",
+      "Infernape",
+      "Blaziken",
+      "Talonflame",
+      "Volcarona"
+    ],
+    "team_size": 6,
+    "weaknesses": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "benchmark": {
+      "name": "weakness-Charizard-Arcanine-Infernape-Blaziken-Talonflame-Volcarona",
+      "median": 102.28947600000174,
+      "p95": 133.1171409999988,
+      "mean": 98.3018275
+    }
+  },
+  {
+    "team": [
+      "Venusaur",
+      "Roserade",
+      "Ferrothorn",
+      "Sceptile",
+      "Ludicolo",
+      "Shiftry"
+    ],
+    "team_size": 6,
+    "weaknesses": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "benchmark": {
+      "name": "weakness-Venusaur-Roserade-Ferrothorn-Sceptile-Ludicolo-Shiftry",
+      "median": 102.4212609999995,
+      "p95": 108.43884900000194,
+      "mean": 104.48408493999989
+    }
+  },
+  {
+    "team": [
+      "Garchomp",
+      "Tyranitar",
+      "Rotom",
+      "Clefable",
+      "Scizor",
+      "Excadrill"
+    ],
+    "team_size": 6,
+    "weaknesses": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "benchmark": {
+      "name": "weakness-Garchomp-Tyranitar-Rotom-Clefable-Scizor-Excadrill",
+      "median": 103.5334109999967,
+      "p95": 206.58278699999937,
+      "mean": 132.97503055999994
+    }
+  },
+  {
+    "team": [
+      "Lapras",
+      "Weavile",
+      "Mamoswine",
+      "Glaceon",
+      "Froslass",
+      "Aurorus"
+    ],
+    "team_size": 6,
+    "weaknesses": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "benchmark": {
+      "name": "weakness-Lapras-Weavile-Mamoswine-Glaceon-Froslass-Aurorus",
+      "median": 102.37141300000076,
+      "p95": 198.74415099999896,
+      "mean": 102.3937558799998
+    }
+  },
+  {
+    "team": [
+      "Lucario",
+      "Machamp",
+      "Conkeldurr",
+      "Breloom",
+      "Hawlucha",
+      "Gallade"
+    ],
+    "team_size": 6,
+    "weaknesses": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "benchmark": {
+      "name": "weakness-Lucario-Machamp-Conkeldurr-Breloom-Hawlucha-Gallade",
+      "median": 102.4491909999997,
+      "p95": 103.74667100000079,
+      "mean": 100.34506881999958
+    }
+  },
+  {
+    "team": [
+      "Toxapex",
+      "Gengar",
+      "Crobat",
+      "Muk",
+      "Roserade",
+      "Garbodor"
+    ],
+    "team_size": 6,
+    "weaknesses": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "benchmark": {
+      "name": "weakness-Toxapex-Gengar-Crobat-Muk-Roserade-Garbodor",
+      "median": 102.39678200000344,
+      "p95": 108.15909400000237,
+      "mean": 100.36313266000084
+    }
+  },
+  {
+    "team": [
+      "Eevee",
+      "Ditto",
+      "Smeargle",
+      "Porygon-Z",
+      "Arceus",
+      "Mew"
+    ],
+    "team_size": 6,
+    "weaknesses": [
+      {
+        "weak_against": [],
+        "strong_against": [],
+        "no_effect": []
+      }
+    ],
+    "benchmark": {
+      "name": "weakness-Eevee-Ditto-Smeargle-Porygon-Z-Arceus-Mew",
+      "median": 102.83869399999821,
+      "p95": 295.71628000000055,
+      "mean": 129.02224484000078
+    }
+  }
+]
