@@ -40,4 +40,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-benchmarks/scripts/data
+benchmarks/scripts/data.venv/
