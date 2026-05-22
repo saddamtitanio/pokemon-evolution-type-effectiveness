@@ -1,0 +1,457 @@
+[
+  {
+    "pokemon": "Bulbasaur",
+    "slug": "bulbasaur",
+    "result": {
+      "id": 1,
+      "name": "Bulbasaur",
+      "slug": "bulbasaur"
+    },
+    "name": "mongodb-pokemon-bulbasaur",
+    "median": 17.982500000000073,
+    "p95": 26.736799999999675,
+    "mean": 19.084876000000005
+  },
+  {
+    "pokemon": "Charmander",
+    "slug": "charmander",
+    "result": {
+      "id": 4,
+      "name": "Charmander",
+      "slug": "charmander"
+    },
+    "name": "mongodb-pokemon-charmander",
+    "median": 17.999300000000403,
+    "p95": 27.371299999999792,
+    "mean": 19.329362
+  },
+  {
+    "pokemon": "Squirtle",
+    "slug": "squirtle",
+    "result": {
+      "id": 7,
+      "name": "Squirtle",
+      "slug": "squirtle"
+    },
+    "name": "mongodb-pokemon-squirtle",
+    "median": 17.856399999999667,
+    "p95": 23.346199999999953,
+    "mean": 18.345725999999942
+  },
+  {
+    "pokemon": "Pikachu",
+    "slug": "pikachu",
+    "result": {
+      "id": 25,
+      "name": "Pikachu",
+      "slug": "pikachu"
+    },
+    "name": "mongodb-pokemon-pikachu",
+    "median": 17.81970000000001,
+    "p95": 22.59230000000025,
+    "mean": 18.487902000000012
+  },
+  {
+    "pokemon": "Eevee",
+    "slug": "eevee",
+    "result": {
+      "id": 133,
+      "name": "Eevee",
+      "slug": "eevee"
+    },
+    "name": "mongodb-pokemon-eevee",
+    "median": 17.903000000000247,
+    "p95": 20.532999999999447,
+    "mean": 18.244823999999934
+  },
+  {
+    "pokemon": "Jigglypuff",
+    "slug": "jigglypuff",
+    "result": {
+      "id": 39,
+      "name": "Jigglypuff",
+      "slug": "jigglypuff"
+    },
+    "name": "mongodb-pokemon-jigglypuff",
+    "median": 17.585399999999936,
+    "p95": 24.444299999999203,
+    "mean": 18.233677999999962
+  },
+  {
+    "pokemon": "Meowth",
+    "slug": "meowth",
+    "result": {
+      "id": 52,
+      "name": "Meowth",
+      "slug": "meowth"
+    },
+    "name": "mongodb-pokemon-meowth",
+    "median": 17.645800000000236,
+    "p95": 19.228399999999965,
+    "mean": 17.822889999999934
+  },
+  {
+    "pokemon": "Psyduck",
+    "slug": "psyduck",
+    "result": {
+      "id": 54,
+      "name": "Psyduck",
+      "slug": "psyduck"
+    },
+    "name": "mongodb-pokemon-psyduck",
+    "median": 17.65229999999974,
+    "p95": 19.02759999999944,
+    "mean": 18.058139999999913
+  },
+  {
+    "pokemon": "Machop",
+    "slug": "machop",
+    "result": {
+      "id": 66,
+      "name": "Machop",
+      "slug": "machop"
+    },
+    "name": "mongodb-pokemon-machop",
+    "median": 17.715299999999843,
+    "p95": 19.38839999999982,
+    "mean": 18.075243999999838
+  },
+  {
+    "pokemon": "Caterpie",
+    "slug": "caterpie",
+    "result": {
+      "id": 10,
+      "name": "Caterpie",
+      "slug": "caterpie"
+    },
+    "name": "mongodb-pokemon-caterpie",
+    "median": 17.69170000000122,
+    "p95": 18.496499999999287,
+    "mean": 18.024141999999884
+  },
+  {
+    "pokemon": "Weedle",
+    "slug": "weedle",
+    "result": {
+      "id": 13,
+      "name": "Weedle",
+      "slug": "weedle"
+    },
+    "name": "mongodb-pokemon-weedle",
+    "median": 17.69499999999971,
+    "p95": 24.040799999998853,
+    "mean": 18.330818000000036
+  },
+  {
+    "pokemon": "Zubat",
+    "slug": "zubat",
+    "result": {
+      "id": 41,
+      "name": "Zubat",
+      "slug": "zubat"
+    },
+    "name": "mongodb-pokemon-zubat",
+    "median": 17.596199999999953,
+    "p95": 24.812200000000303,
+    "mean": 18.4664520000001
+  },
+  {
+    "pokemon": "Magikarp",
+    "slug": "magikarp",
+    "result": {
+      "id": 129,
+      "name": "Magikarp",
+      "slug": "magikarp"
+    },
+    "name": "mongodb-pokemon-magikarp",
+    "median": 17.53819999999905,
+    "p95": 19.551500000001397,
+    "mean": 18.263419999999968
+  },
+  {
+    "pokemon": "Dratini",
+    "slug": "dratini",
+    "result": {
+      "id": 147,
+      "name": "Dratini",
+      "slug": "dratini"
+    },
+    "name": "mongodb-pokemon-dratini",
+    "median": 17.59599999999773,
+    "p95": 20.27169999999751,
+    "mean": 18.25666199999956
+  },
+  {
+    "pokemon": "Tyrogue",
+    "slug": "tyrogue",
+    "result": {
+      "id": 236,
+      "name": "Tyrogue",
+      "slug": "tyrogue"
+    },
+    "name": "mongodb-pokemon-tyrogue",
+    "median": 17.539600000000064,
+    "p95": 27.42580000000089,
+    "mean": 18.936970000000148
+  },
+  {
+    "pokemon": "Wurmple",
+    "slug": "wurmple",
+    "result": {
+      "id": 265,
+      "name": "Wurmple",
+      "slug": "wurmple"
+    },
+    "name": "mongodb-pokemon-wurmple",
+    "median": 17.572000000000116,
+    "p95": 25.736000000000786,
+    "mean": 18.48027000000002
+  },
+  {
+    "pokemon": "Clamperl",
+    "slug": "clamperl",
+    "result": {
+      "id": 366,
+      "name": "Clamperl",
+      "slug": "clamperl"
+    },
+    "name": "mongodb-pokemon-clamperl",
+    "median": 17.578099999998813,
+    "p95": 21.122999999999593,
+    "mean": 18.243484000000244
+  },
+  {
+    "pokemon": "Chikorita",
+    "slug": "chikorita",
+    "result": {
+      "id": 152,
+      "name": "Chikorita",
+      "slug": "chikorita"
+    },
+    "name": "mongodb-pokemon-chikorita",
+    "median": 17.529500000000553,
+    "p95": 23.279899999997724,
+    "mean": 18.537271999999792
+  },
+  {
+    "pokemon": "Cyndaquil",
+    "slug": "cyndaquil",
+    "result": {
+      "id": 155,
+      "name": "Cyndaquil",
+      "slug": "cyndaquil"
+    },
+    "name": "mongodb-pokemon-cyndaquil",
+    "median": 17.5570000000007,
+    "p95": 18.376400000001013,
+    "mean": 18.175406000000365
+  },
+  {
+    "pokemon": "Totodile",
+    "slug": "totodile",
+    "result": {
+      "id": 158,
+      "name": "Totodile",
+      "slug": "totodile"
+    },
+    "name": "mongodb-pokemon-totodile",
+    "median": 17.5,
+    "p95": 18.84389999999985,
+    "mean": 17.79766399999993
+  },
+  {
+    "pokemon": "Ralts",
+    "slug": "ralts",
+    "result": {
+      "id": 280,
+      "name": "Ralts",
+      "slug": "ralts"
+    },
+    "name": "mongodb-pokemon-ralts",
+    "median": 17.601399999999558,
+    "p95": 25.140599999998813,
+    "mean": 18.960814000000244
+  },
+  {
+    "pokemon": "Bagon",
+    "slug": "bagon",
+    "result": {
+      "id": 371,
+      "name": "Bagon",
+      "slug": "bagon"
+    },
+    "name": "mongodb-pokemon-bagon",
+    "median": 17.544099999999162,
+    "p95": 23.725800000000163,
+    "mean": 18.33061999999976
+  },
+  {
+    "pokemon": "Beldum",
+    "slug": "beldum",
+    "result": {
+      "id": 374,
+      "name": "Beldum",
+      "slug": "beldum"
+    },
+    "name": "mongodb-pokemon-beldum",
+    "median": 17.76599999999962,
+    "p95": 29.33589999999822,
+    "mean": 19.59447199999995
+  },
+  {
+    "pokemon": "Gible",
+    "slug": "gible",
+    "result": {
+      "id": 443,
+      "name": "Gible",
+      "slug": "gible"
+    },
+    "name": "mongodb-pokemon-gible",
+    "median": 18.00250000000233,
+    "p95": 31.009100000002945,
+    "mean": 19.91995400000007
+  },
+  {
+    "pokemon": "Riolu",
+    "slug": "riolu",
+    "result": {
+      "id": 447,
+      "name": "Riolu",
+      "slug": "riolu"
+    },
+    "name": "mongodb-pokemon-riolu",
+    "median": 17.520799999998417,
+    "p95": 22.399499999999534,
+    "mean": 18.05308800000028
+  },
+  {
+    "pokemon": "Lucario",
+    "slug": "lucario",
+    "result": {
+      "id": 448,
+      "name": "Lucario",
+      "slug": "lucario"
+    },
+    "name": "mongodb-pokemon-lucario",
+    "median": 17.478800000000774,
+    "p95": 25.381899999996676,
+    "mean": 18.222932000000075
+  },
+  {
+    "pokemon": "Garchomp",
+    "slug": "garchomp",
+    "result": {
+      "id": 445,
+      "name": "Garchomp",
+      "slug": "garchomp"
+    },
+    "name": "mongodb-pokemon-garchomp",
+    "median": 17.50920000000042,
+    "p95": 18.43279999999868,
+    "mean": 17.917850000000108
+  },
+  {
+    "pokemon": "Greninja",
+    "slug": "greninja",
+    "result": {
+      "id": 658,
+      "name": "Greninja",
+      "slug": "greninja"
+    },
+    "name": "mongodb-pokemon-greninja",
+    "median": 17.60859999999957,
+    "p95": 18.955399999998917,
+    "mean": 18.57853400000058
+  },
+  {
+    "pokemon": "Incineroar",
+    "slug": "incineroar",
+    "result": {
+      "id": 727,
+      "name": "Incineroar",
+      "slug": "incineroar"
+    },
+    "name": "mongodb-pokemon-incineroar",
+    "median": 17.427700000000186,
+    "p95": 18.27969999999914,
+    "mean": 17.78090800000049
+  },
+  {
+    "pokemon": "Dragapult",
+    "slug": "dragapult",
+    "result": {
+      "id": 887,
+      "name": "Dragapult",
+      "slug": "dragapult"
+    },
+    "name": "mongodb-pokemon-dragapult",
+    "median": 17.579499999999825,
+    "p95": 22.362999999997555,
+    "mean": 18.07966400000034
+  },
+  {
+    "pokemon": "Snorlax",
+    "slug": "snorlax",
+    "result": {
+      "id": 143,
+      "name": "Snorlax",
+      "slug": "snorlax"
+    },
+    "name": "mongodb-pokemon-snorlax",
+    "median": 17.490899999997055,
+    "p95": 22.251799999998184,
+    "mean": 18.174235999999656
+  },
+  {
+    "pokemon": "Lapras",
+    "slug": "lapras",
+    "result": {
+      "id": 131,
+      "name": "Lapras",
+      "slug": "lapras"
+    },
+    "name": "mongodb-pokemon-lapras",
+    "median": 17.467400000001362,
+    "p95": 26.550199999997858,
+    "mean": 18.61948799999969
+  },
+  {
+    "pokemon": "Dragonite",
+    "slug": "dragonite",
+    "result": {
+      "id": 149,
+      "name": "Dragonite",
+      "slug": "dragonite"
+    },
+    "name": "mongodb-pokemon-dragonite",
+    "median": 17.505400000001828,
+    "p95": 22.955399999998917,
+    "mean": 18.487570000000122
+  },
+  {
+    "pokemon": "Mewtwo",
+    "slug": "mewtwo",
+    "result": {
+      "id": 150,
+      "name": "Mewtwo",
+      "slug": "mewtwo"
+    },
+    "name": "mongodb-pokemon-mewtwo",
+    "median": 17.58839999999327,
+    "p95": 26.235099999998056,
+    "mean": 18.744608000000007
+  },
+  {
+    "pokemon": "Ditto",
+    "slug": "ditto",
+    "result": {
+      "id": 132,
+      "name": "Ditto",
+      "slug": "ditto"
+    },
+    "name": "mongodb-pokemon-ditto",
+    "median": 17.444900000002235,
+    "p95": 17.88969999999972,
+    "mean": 17.481517999999777
+  }
+]
