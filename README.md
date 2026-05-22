@@ -1,6 +1,6 @@
 # Pokémon Evolution & Type Effectiveness Analysis Network
 
-A high-performance polyglot database web application designed to query, traverse, and build Pokémon teams, utilizing **MongoDB** for document archives and **Neo4j** for relational graph networks.
+A high-performance multi-database web application designed to query, traverse, and build Pokémon teams, utilizing **MongoDB** for document archives and **Neo4j** for relational graph networks.
 
 ---
 
@@ -45,7 +45,7 @@ The entire three-tier stack (MongoDB, Neo4j, and Next.js) can be launched locall
    npm install
    ```
 
-2. **Configure environment variables**:
+2. **Configure environment variables**: (example .env)
    Create a `.env.local` file in the root directory:
 
    ```env
