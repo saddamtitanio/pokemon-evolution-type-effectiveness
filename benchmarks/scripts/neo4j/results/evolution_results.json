@@ -4,1168 +4,948 @@
     "result": [
       {
         "pokemon": "Bulbasaur",
-        "base": "bulbasaur",
+        "base": "Bulbasaur",
         "evolutions": [
           {
             "condition": null,
-            "from": "bulbasaur",
-            "to": "ivysaur"
+            "from": "Bulbasaur",
+            "to": "Ivysaur"
           }
         ]
       },
       {
         "pokemon": "Bulbasaur",
-        "base": "bulbasaur",
+        "base": "Bulbasaur",
         "evolutions": [
           {
             "condition": null,
-            "from": "bulbasaur",
-            "to": "ivysaur"
+            "from": "Bulbasaur",
+            "to": "Ivysaur"
           },
           {
             "condition": null,
-            "from": "ivysaur",
-            "to": "venusaur"
+            "from": "Ivysaur",
+            "to": "Venusaur"
           }
         ]
       }
     ],
     "name": "evolution-Bulbasaur",
-    "median": 102.31425000000036,
-    "p95": 112.58089399999972,
-    "mean": 90.05852375999989
+    "median": 33.20849999999973,
+    "p95": 36.516999999999825,
+    "mean": 34.02653399999991
   },
   {
     "pokemon": "Charmander",
     "result": [
       {
         "pokemon": "Charmander",
-        "base": "charmander",
+        "base": "Charmander",
         "evolutions": [
           {
             "condition": null,
-            "from": "charmander",
-            "to": "charmeleon"
+            "from": "Charmander",
+            "to": "Charmeleon"
           }
         ]
       },
       {
         "pokemon": "Charmander",
-        "base": "charmander",
+        "base": "Charmander",
         "evolutions": [
           {
             "condition": null,
-            "from": "charmander",
-            "to": "charmeleon"
+            "from": "Charmander",
+            "to": "Charmeleon"
           },
           {
             "condition": null,
-            "from": "charmeleon",
-            "to": "charizard"
+            "from": "Charmeleon",
+            "to": "Charizard"
           }
         ]
       }
     ],
     "name": "evolution-Charmander",
-    "median": 99.32826900000055,
-    "p95": 144.26393299999927,
-    "mean": 89.16119730000008
+    "median": 32.078199999999924,
+    "p95": 39.888700000000426,
+    "mean": 33.39564999999997
   },
   {
     "pokemon": "Squirtle",
     "result": [
       {
         "pokemon": "Squirtle",
-        "base": "squirtle",
+        "base": "Squirtle",
         "evolutions": [
           {
             "condition": null,
-            "from": "squirtle",
-            "to": "wartortle"
+            "from": "Squirtle",
+            "to": "Wartortle"
           }
         ]
       },
       {
         "pokemon": "Squirtle",
-        "base": "squirtle",
+        "base": "Squirtle",
         "evolutions": [
           {
             "condition": null,
-            "from": "squirtle",
-            "to": "wartortle"
+            "from": "Squirtle",
+            "to": "Wartortle"
           },
           {
             "condition": null,
-            "from": "wartortle",
-            "to": "blastoise"
+            "from": "Wartortle",
+            "to": "Blastoise"
           }
         ]
       }
     ],
     "name": "evolution-Squirtle",
-    "median": 105.18045600000005,
-    "p95": 211.3277109999999,
-    "mean": 109.68769032000007
+    "median": 31.203300000000127,
+    "p95": 32.91559999999936,
+    "mean": 31.44513199999994
   },
   {
     "pokemon": "Pikachu",
-    "result": [
-      {
-        "pokemon": "Pikachu",
-        "base": "pichu",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "pichu",
-            "to": "pikachu"
-          }
-        ]
-      },
-      {
-        "pokemon": "Pikachu",
-        "base": "pichu",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "pichu",
-            "to": "pikachu"
-          },
-          {
-            "condition": null,
-            "from": "pikachu",
-            "to": "raichu"
-          }
-        ]
-      }
-    ],
+    "result": [],
     "name": "evolution-Pikachu",
-    "median": 40.42970100000093,
-    "p95": 203.60386599999765,
-    "mean": 81.64861514000012
+    "median": 30.918899999998757,
+    "p95": 33.30649999999878,
+    "mean": 31.345218000000024
   },
   {
     "pokemon": "Eevee",
     "result": [
       {
         "pokemon": "Eevee",
-        "base": "eevee",
+        "base": "Eevee",
         "evolutions": [
           {
             "condition": null,
-            "from": "eevee",
-            "to": "vaporeon"
+            "from": "Eevee",
+            "to": "Vaporeon"
           }
         ]
       },
       {
         "pokemon": "Eevee",
-        "base": "eevee",
+        "base": "Eevee",
         "evolutions": [
           {
             "condition": null,
-            "from": "eevee",
-            "to": "jolteon"
+            "from": "Eevee",
+            "to": "Jolteon"
           }
         ]
       },
       {
         "pokemon": "Eevee",
-        "base": "eevee",
+        "base": "Eevee",
         "evolutions": [
           {
             "condition": null,
-            "from": "eevee",
-            "to": "flareon"
+            "from": "Eevee",
+            "to": "Flareon"
           }
         ]
       },
       {
         "pokemon": "Eevee",
-        "base": "eevee",
+        "base": "Eevee",
         "evolutions": [
           {
             "condition": null,
-            "from": "eevee",
-            "to": "espeon"
+            "from": "Eevee",
+            "to": "Espeon"
           }
         ]
       },
       {
         "pokemon": "Eevee",
-        "base": "eevee",
+        "base": "Eevee",
         "evolutions": [
           {
             "condition": null,
-            "from": "eevee",
-            "to": "umbreon"
+            "from": "Eevee",
+            "to": "Umbreon"
           }
         ]
       },
       {
         "pokemon": "Eevee",
-        "base": "eevee",
+        "base": "Eevee",
         "evolutions": [
           {
             "condition": null,
-            "from": "eevee",
-            "to": "leafeon"
+            "from": "Eevee",
+            "to": "Leafeon"
           }
         ]
       },
       {
         "pokemon": "Eevee",
-        "base": "eevee",
+        "base": "Eevee",
         "evolutions": [
           {
             "condition": null,
-            "from": "eevee",
-            "to": "glaceon"
+            "from": "Eevee",
+            "to": "Glaceon"
           }
         ]
       },
       {
         "pokemon": "Eevee",
-        "base": "eevee",
+        "base": "Eevee",
         "evolutions": [
           {
             "condition": null,
-            "from": "eevee",
-            "to": "sylveon"
+            "from": "Eevee",
+            "to": "Sylveon"
           }
         ]
       }
     ],
     "name": "evolution-Eevee",
-    "median": 38.58600500000102,
-    "p95": 162.29419899999994,
-    "mean": 70.00058581999983
+    "median": 31.41399999999885,
+    "p95": 34.80159999999887,
+    "mean": 31.692248000000145
   },
   {
     "pokemon": "Jigglypuff",
-    "result": [
-      {
-        "pokemon": "Jigglypuff",
-        "base": "igglybuff",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "igglybuff",
-            "to": "jigglypuff"
-          }
-        ]
-      },
-      {
-        "pokemon": "Jigglypuff",
-        "base": "igglybuff",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "igglybuff",
-            "to": "jigglypuff"
-          },
-          {
-            "condition": null,
-            "from": "jigglypuff",
-            "to": "wigglytuff"
-          }
-        ]
-      }
-    ],
+    "result": [],
     "name": "evolution-Jigglypuff",
-    "median": 98.68998900000224,
-    "p95": 188.22740200000044,
-    "mean": 84.60458362000013
+    "median": 30.848299999999654,
+    "p95": 32.39310000000114,
+    "mean": 32.692531999999886
   },
   {
     "pokemon": "Meowth",
     "result": [
       {
         "pokemon": "Meowth",
-        "base": "meowth",
+        "base": "Meowth",
         "evolutions": [
           {
             "condition": null,
-            "from": "meowth",
-            "to": "persian"
+            "from": "Meowth",
+            "to": "Persian"
           }
         ]
       }
     ],
     "name": "evolution-Meowth",
-    "median": 101.21608800000104,
-    "p95": 127.74731299999985,
-    "mean": 89.40538314000034
+    "median": 30.724099999999453,
+    "p95": 33.40309999999954,
+    "mean": 31.20790799999999
   },
   {
     "pokemon": "Psyduck",
     "result": [
       {
         "pokemon": "Psyduck",
-        "base": "psyduck",
+        "base": "Psyduck",
         "evolutions": [
           {
             "condition": null,
-            "from": "psyduck",
-            "to": "golduck"
+            "from": "Psyduck",
+            "to": "Golduck"
           }
         ]
       }
     ],
     "name": "evolution-Psyduck",
-    "median": 101.33696500000224,
-    "p95": 297.0114650000032,
-    "mean": 108.59241613999984
+    "median": 31.205800000003364,
+    "p95": 32.95970000000307,
+    "mean": 31.338588000000055
   },
   {
     "pokemon": "Machop",
     "result": [
       {
         "pokemon": "Machop",
-        "base": "machop",
+        "base": "Machop",
         "evolutions": [
           {
             "condition": null,
-            "from": "machop",
-            "to": "machoke"
+            "from": "Machop",
+            "to": "Machoke"
           }
         ]
       },
       {
         "pokemon": "Machop",
-        "base": "machop",
+        "base": "Machop",
         "evolutions": [
           {
             "condition": null,
-            "from": "machop",
-            "to": "machoke"
+            "from": "Machop",
+            "to": "Machoke"
           },
           {
             "condition": null,
-            "from": "machoke",
-            "to": "machamp"
+            "from": "Machoke",
+            "to": "Machamp"
           }
         ]
       }
     ],
     "name": "evolution-Machop",
-    "median": 105.34038099999452,
-    "p95": 203.61494200000016,
-    "mean": 121.30669543999974
+    "median": 31.33350000000064,
+    "p95": 32.764900000001944,
+    "mean": 31.455818000000217
   },
   {
     "pokemon": "Caterpie",
     "result": [
       {
         "pokemon": "Caterpie",
-        "base": "caterpie",
+        "base": "Caterpie",
         "evolutions": [
           {
             "condition": null,
-            "from": "caterpie",
-            "to": "metapod"
+            "from": "Caterpie",
+            "to": "Metapod"
           }
         ]
       },
       {
         "pokemon": "Caterpie",
-        "base": "caterpie",
+        "base": "Caterpie",
         "evolutions": [
           {
             "condition": null,
-            "from": "caterpie",
-            "to": "metapod"
+            "from": "Caterpie",
+            "to": "Metapod"
           },
           {
             "condition": null,
-            "from": "metapod",
-            "to": "butterfree"
+            "from": "Metapod",
+            "to": "Butterfree"
           }
         ]
       }
     ],
     "name": "evolution-Caterpie",
-    "median": 102.62727499999892,
-    "p95": 200.83616099999927,
-    "mean": 104.4512354999999
+    "median": 31.034700000000157,
+    "p95": 33.84029999999984,
+    "mean": 31.58842800000035
   },
   {
     "pokemon": "Weedle",
     "result": [
       {
         "pokemon": "Weedle",
-        "base": "weedle",
+        "base": "Weedle",
         "evolutions": [
           {
             "condition": null,
-            "from": "weedle",
-            "to": "kakuna"
+            "from": "Weedle",
+            "to": "Kakuna"
           }
         ]
       },
       {
         "pokemon": "Weedle",
-        "base": "weedle",
+        "base": "Weedle",
         "evolutions": [
           {
             "condition": null,
-            "from": "weedle",
-            "to": "kakuna"
+            "from": "Weedle",
+            "to": "Kakuna"
           },
           {
             "condition": null,
-            "from": "kakuna",
-            "to": "beedrill"
+            "from": "Kakuna",
+            "to": "Beedrill"
           }
         ]
       }
     ],
     "name": "evolution-Weedle",
-    "median": 102.82384499999898,
-    "p95": 193.81424200000038,
-    "mean": 100.36247292
+    "median": 31.181400000001304,
+    "p95": 32.122699999999895,
+    "mean": 31.29255399999987
   },
   {
     "pokemon": "Zubat",
     "result": [
       {
         "pokemon": "Zubat",
-        "base": "zubat",
+        "base": "Zubat",
         "evolutions": [
           {
             "condition": null,
-            "from": "zubat",
-            "to": "golbat"
+            "from": "Zubat",
+            "to": "Golbat"
           }
         ]
       },
       {
         "pokemon": "Zubat",
-        "base": "zubat",
+        "base": "Zubat",
         "evolutions": [
           {
             "condition": null,
-            "from": "zubat",
-            "to": "golbat"
+            "from": "Zubat",
+            "to": "Golbat"
           },
           {
             "condition": null,
-            "from": "golbat",
-            "to": "crobat"
+            "from": "Golbat",
+            "to": "Crobat"
           }
         ]
       }
     ],
     "name": "evolution-Zubat",
-    "median": 101.51438299999427,
-    "p95": 134.16670699999668,
-    "mean": 94.31803393999958
+    "median": 31.34530000000086,
+    "p95": 33.429400000000896,
+    "mean": 31.579478000000016
   },
   {
     "pokemon": "Magikarp",
     "result": [
       {
         "pokemon": "Magikarp",
-        "base": "magikarp",
+        "base": "Magikarp",
         "evolutions": [
           {
             "condition": null,
-            "from": "magikarp",
-            "to": "gyarados"
+            "from": "Magikarp",
+            "to": "Gyarados"
           }
         ]
       }
     ],
     "name": "evolution-Magikarp",
-    "median": 173.53204400000686,
-    "p95": 256.91904700000305,
-    "mean": 149.3419731399993
+    "median": 31.69090000000142,
+    "p95": 42.85659999999916,
+    "mean": 33.02718400000027
   },
   {
     "pokemon": "Dratini",
     "result": [
       {
         "pokemon": "Dratini",
-        "base": "dratini",
+        "base": "Dratini",
         "evolutions": [
           {
             "condition": null,
-            "from": "dratini",
-            "to": "dragonair"
+            "from": "Dratini",
+            "to": "Dragonair"
           }
         ]
       },
       {
         "pokemon": "Dratini",
-        "base": "dratini",
+        "base": "Dratini",
         "evolutions": [
           {
             "condition": null,
-            "from": "dratini",
-            "to": "dragonair"
+            "from": "Dratini",
+            "to": "Dragonair"
           },
           {
             "condition": null,
-            "from": "dragonair",
-            "to": "dragonite"
+            "from": "Dragonair",
+            "to": "Dragonite"
           }
         ]
       }
     ],
     "name": "evolution-Dratini",
-    "median": 102.86599299999943,
-    "p95": 196.62892600000487,
-    "mean": 105.19068406000005
+    "median": 31.696100000001024,
+    "p95": 40.49989999999889,
+    "mean": 33.17998200000009
   },
   {
     "pokemon": "Tyrogue",
     "result": [
       {
         "pokemon": "Tyrogue",
-        "base": "tyrogue",
+        "base": "Tyrogue",
         "evolutions": [
           {
             "condition": null,
-            "from": "tyrogue",
-            "to": "hitmonlee"
+            "from": "Tyrogue",
+            "to": "Hitmonlee"
           }
         ]
       },
       {
         "pokemon": "Tyrogue",
-        "base": "tyrogue",
+        "base": "Tyrogue",
         "evolutions": [
           {
             "condition": null,
-            "from": "tyrogue",
-            "to": "hitmonchan"
+            "from": "Tyrogue",
+            "to": "Hitmonchan"
           }
         ]
       },
       {
         "pokemon": "Tyrogue",
-        "base": "tyrogue",
+        "base": "Tyrogue",
         "evolutions": [
           {
             "condition": null,
-            "from": "tyrogue",
-            "to": "hitmontop"
+            "from": "Tyrogue",
+            "to": "Hitmontop"
           }
         ]
       }
     ],
     "name": "evolution-Tyrogue",
-    "median": 102.56196500000078,
-    "p95": 136.18851700000232,
-    "mean": 98.4595075399999
+    "median": 31.44709999999759,
+    "p95": 39.07730000000083,
+    "mean": 32.645241999999925
   },
   {
     "pokemon": "Wurmple",
     "result": [
       {
         "pokemon": "Wurmple",
-        "base": "wurmple",
+        "base": "Wurmple",
         "evolutions": [
           {
             "condition": null,
-            "from": "wurmple",
-            "to": "silcoon"
+            "from": "Wurmple",
+            "to": "Silcoon"
           }
         ]
       },
       {
         "pokemon": "Wurmple",
-        "base": "wurmple",
+        "base": "Wurmple",
         "evolutions": [
           {
             "condition": null,
-            "from": "wurmple",
-            "to": "silcoon"
+            "from": "Wurmple",
+            "to": "Silcoon"
           },
           {
             "condition": null,
-            "from": "silcoon",
-            "to": "beautifly"
+            "from": "Silcoon",
+            "to": "Beautifly"
           }
         ]
       },
       {
         "pokemon": "Wurmple",
-        "base": "wurmple",
+        "base": "Wurmple",
         "evolutions": [
           {
             "condition": null,
-            "from": "wurmple",
-            "to": "cascoon"
+            "from": "Wurmple",
+            "to": "Cascoon"
           }
         ]
       },
       {
         "pokemon": "Wurmple",
-        "base": "wurmple",
+        "base": "Wurmple",
         "evolutions": [
           {
             "condition": null,
-            "from": "wurmple",
-            "to": "cascoon"
+            "from": "Wurmple",
+            "to": "Cascoon"
           },
           {
             "condition": null,
-            "from": "cascoon",
-            "to": "dustox"
+            "from": "Cascoon",
+            "to": "Dustox"
           }
         ]
       }
     ],
     "name": "evolution-Wurmple",
-    "median": 103.42173299999558,
-    "p95": 127.84434899999178,
-    "mean": 110.90986027999898
+    "median": 31.27059999999983,
+    "p95": 45.05110000000059,
+    "mean": 33.14207600000023
   },
   {
     "pokemon": "Clamperl",
     "result": [
       {
         "pokemon": "Clamperl",
-        "base": "clamperl",
+        "base": "Clamperl",
         "evolutions": [
           {
             "condition": null,
-            "from": "clamperl",
-            "to": "huntail"
+            "from": "Clamperl",
+            "to": "Huntail"
           }
         ]
       },
       {
         "pokemon": "Clamperl",
-        "base": "clamperl",
+        "base": "Clamperl",
         "evolutions": [
           {
             "condition": null,
-            "from": "clamperl",
-            "to": "gorebyss"
+            "from": "Clamperl",
+            "to": "Gorebyss"
           }
         ]
       }
     ],
     "name": "evolution-Clamperl",
-    "median": 108.65378000000783,
-    "p95": 307.69252899999265,
-    "mean": 157.88917241999908
+    "median": 31.920799999999872,
+    "p95": 40.20939999999973,
+    "mean": 32.94328999999947
   },
   {
     "pokemon": "Chikorita",
     "result": [
       {
         "pokemon": "Chikorita",
-        "base": "chikorita",
+        "base": "Chikorita",
         "evolutions": [
           {
             "condition": null,
-            "from": "chikorita",
-            "to": "bayleef"
+            "from": "Chikorita",
+            "to": "Bayleef"
           }
         ]
       },
       {
         "pokemon": "Chikorita",
-        "base": "chikorita",
+        "base": "Chikorita",
         "evolutions": [
           {
             "condition": null,
-            "from": "chikorita",
-            "to": "bayleef"
+            "from": "Chikorita",
+            "to": "Bayleef"
           },
           {
             "condition": null,
-            "from": "bayleef",
-            "to": "meganium"
+            "from": "Bayleef",
+            "to": "Meganium"
           }
         ]
       }
     ],
     "name": "evolution-Chikorita",
-    "median": 105.28497100000095,
-    "p95": 209.90101400000276,
-    "mean": 135.27257619999872
+    "median": 31.292600000000675,
+    "p95": 34.456200000000536,
+    "mean": 31.743051999999736
   },
   {
     "pokemon": "Cyndaquil",
     "result": [
       {
         "pokemon": "Cyndaquil",
-        "base": "cyndaquil",
+        "base": "Cyndaquil",
         "evolutions": [
           {
             "condition": null,
-            "from": "cyndaquil",
-            "to": "quilava"
+            "from": "Cyndaquil",
+            "to": "Quilava"
           }
         ]
       },
       {
         "pokemon": "Cyndaquil",
-        "base": "cyndaquil",
+        "base": "Cyndaquil",
         "evolutions": [
           {
             "condition": null,
-            "from": "cyndaquil",
-            "to": "quilava"
+            "from": "Cyndaquil",
+            "to": "Quilava"
           },
           {
             "condition": null,
-            "from": "quilava",
-            "to": "typhlosion"
+            "from": "Quilava",
+            "to": "Typhlosion"
           }
         ]
       }
     ],
     "name": "evolution-Cyndaquil",
-    "median": 102.02979200000118,
-    "p95": 204.28195299999788,
-    "mean": 102.46995777999982
+    "median": 31.234299999996438,
+    "p95": 32.32299999999668,
+    "mean": 31.307447999999713
   },
   {
     "pokemon": "Totodile",
     "result": [
       {
         "pokemon": "Totodile",
-        "base": "totodile",
+        "base": "Totodile",
         "evolutions": [
           {
             "condition": null,
-            "from": "totodile",
-            "to": "croconaw"
+            "from": "Totodile",
+            "to": "Croconaw"
           }
         ]
       },
       {
         "pokemon": "Totodile",
-        "base": "totodile",
+        "base": "Totodile",
         "evolutions": [
           {
             "condition": null,
-            "from": "totodile",
-            "to": "croconaw"
+            "from": "Totodile",
+            "to": "Croconaw"
           },
           {
             "condition": null,
-            "from": "croconaw",
-            "to": "feraligatr"
+            "from": "Croconaw",
+            "to": "Feraligatr"
           }
         ]
       }
     ],
     "name": "evolution-Totodile",
-    "median": 104.01655000000028,
-    "p95": 302.59720400000515,
-    "mean": 133.5225175200013
+    "median": 31.07050000000163,
+    "p95": 33.04629999999452,
+    "mean": 31.985535999999264
   },
   {
     "pokemon": "Ralts",
     "result": [
       {
         "pokemon": "Ralts",
-        "base": "ralts",
+        "base": "Ralts",
         "evolutions": [
           {
             "condition": null,
-            "from": "ralts",
-            "to": "kirlia"
+            "from": "Ralts",
+            "to": "Kirlia"
           }
         ]
       },
       {
         "pokemon": "Ralts",
-        "base": "ralts",
+        "base": "Ralts",
         "evolutions": [
           {
             "condition": null,
-            "from": "ralts",
-            "to": "kirlia"
+            "from": "Ralts",
+            "to": "Kirlia"
           },
           {
             "condition": null,
-            "from": "kirlia",
-            "to": "gardevoir"
+            "from": "Kirlia",
+            "to": "Gardevoir"
           }
         ]
       }
     ],
     "name": "evolution-Ralts",
-    "median": 105.43945900000108,
-    "p95": 208.3423299999995,
-    "mean": 133.26530451999918
+    "median": 31.14730000000418,
+    "p95": 32.29809999999998,
+    "mean": 31.137281999999686
   },
   {
     "pokemon": "Bagon",
     "result": [
       {
         "pokemon": "Bagon",
-        "base": "bagon",
+        "base": "Bagon",
         "evolutions": [
           {
             "condition": null,
-            "from": "bagon",
-            "to": "shelgon"
+            "from": "Bagon",
+            "to": "Shelgon"
           }
         ]
       },
       {
         "pokemon": "Bagon",
-        "base": "bagon",
+        "base": "Bagon",
         "evolutions": [
           {
             "condition": null,
-            "from": "bagon",
-            "to": "shelgon"
+            "from": "Bagon",
+            "to": "Shelgon"
           },
           {
             "condition": null,
-            "from": "shelgon",
-            "to": "salamence"
+            "from": "Shelgon",
+            "to": "Salamence"
           }
         ]
       }
     ],
     "name": "evolution-Bagon",
-    "median": 102.97770799999125,
-    "p95": 112.91516100001172,
-    "mean": 106.54746883999877
+    "median": 30.916400000001886,
+    "p95": 32.496399999996356,
+    "mean": 31.083554000000003
   },
   {
     "pokemon": "Beldum",
     "result": [
       {
         "pokemon": "Beldum",
-        "base": "beldum",
+        "base": "Beldum",
         "evolutions": [
           {
             "condition": null,
-            "from": "beldum",
-            "to": "metang"
+            "from": "Beldum",
+            "to": "Metang"
           }
         ]
       },
       {
         "pokemon": "Beldum",
-        "base": "beldum",
+        "base": "Beldum",
         "evolutions": [
           {
             "condition": null,
-            "from": "beldum",
-            "to": "metang"
+            "from": "Beldum",
+            "to": "Metang"
           },
           {
             "condition": null,
-            "from": "metang",
-            "to": "metagross"
+            "from": "Metang",
+            "to": "Metagross"
           }
         ]
       }
     ],
     "name": "evolution-Beldum",
-    "median": 102.3511030000227,
-    "p95": 201.13934799999697,
-    "mean": 106.61055224000185
+    "median": 30.981800000001385,
+    "p95": 37.30449999999837,
+    "mean": 31.4983859999993
   },
   {
     "pokemon": "Gible",
     "result": [
       {
         "pokemon": "Gible",
-        "base": "gible",
+        "base": "Gible",
         "evolutions": [
           {
             "condition": null,
-            "from": "gible",
-            "to": "gabite"
+            "from": "Gible",
+            "to": "Gabite"
           }
         ]
       },
       {
         "pokemon": "Gible",
-        "base": "gible",
+        "base": "Gible",
         "evolutions": [
           {
             "condition": null,
-            "from": "gible",
-            "to": "gabite"
+            "from": "Gible",
+            "to": "Gabite"
           },
           {
             "condition": null,
-            "from": "gabite",
-            "to": "garchomp"
+            "from": "Gabite",
+            "to": "Garchomp"
           }
         ]
       }
     ],
     "name": "evolution-Gible",
-    "median": 105.58422600000631,
-    "p95": 306.99632800000836,
-    "mean": 159.9135558399977
+    "median": 30.984299999996438,
+    "p95": 32.103399999999965,
+    "mean": 31.06094999999943
   },
   {
     "pokemon": "Riolu",
     "result": [
       {
         "pokemon": "Riolu",
-        "base": "riolu",
+        "base": "Riolu",
         "evolutions": [
           {
             "condition": null,
-            "from": "riolu",
-            "to": "lucario"
+            "from": "Riolu",
+            "to": "Lucario"
           }
         ]
       }
     ],
     "name": "evolution-Riolu",
-    "median": 102.72497900002054,
-    "p95": 111.16430199999013,
-    "mean": 106.577494899999
+    "median": 30.720799999995506,
+    "p95": 33.137399999999616,
+    "mean": 31.0179359999999
   },
   {
     "pokemon": "Lucario",
-    "result": [
-      {
-        "pokemon": "Lucario",
-        "base": "riolu",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "riolu",
-            "to": "lucario"
-          }
-        ]
-      }
-    ],
+    "result": [],
     "name": "evolution-Lucario",
-    "median": 102.57874899997842,
-    "p95": 200.37672299999394,
-    "mean": 108.4584826400003
+    "median": 30.463999999999942,
+    "p95": 32.02700000000186,
+    "mean": 31.214509999999862
   },
   {
     "pokemon": "Garchomp",
-    "result": [
-      {
-        "pokemon": "Garchomp",
-        "base": "gible",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "gible",
-            "to": "gabite"
-          }
-        ]
-      },
-      {
-        "pokemon": "Garchomp",
-        "base": "gible",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "gible",
-            "to": "gabite"
-          },
-          {
-            "condition": null,
-            "from": "gabite",
-            "to": "garchomp"
-          }
-        ]
-      }
-    ],
+    "result": [],
     "name": "evolution-Garchomp",
-    "median": 103.39461899999878,
-    "p95": 110.7651729999925,
-    "mean": 110.62271615999926
+    "median": 30.435499999999593,
+    "p95": 31.807099999998172,
+    "mean": 30.589838000000455
   },
   {
     "pokemon": "Greninja",
-    "result": [
-      {
-        "pokemon": "Greninja",
-        "base": "froakie",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "froakie",
-            "to": "frogadier"
-          }
-        ]
-      },
-      {
-        "pokemon": "Greninja",
-        "base": "froakie",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "froakie",
-            "to": "frogadier"
-          },
-          {
-            "condition": null,
-            "from": "frogadier",
-            "to": "greninja"
-          }
-        ]
-      }
-    ],
+    "result": [],
     "name": "evolution-Greninja",
-    "median": 85.27848300000187,
-    "p95": 123.68041800000356,
-    "mean": 75.46059990000212
+    "median": 30.411699999996927,
+    "p95": 33.14669999999751,
+    "mean": 30.888777999999874
   },
   {
     "pokemon": "Incineroar",
-    "result": [
-      {
-        "pokemon": "Incineroar",
-        "base": "litten",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "litten",
-            "to": "torracat"
-          }
-        ]
-      },
-      {
-        "pokemon": "Incineroar",
-        "base": "litten",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "litten",
-            "to": "torracat"
-          },
-          {
-            "condition": null,
-            "from": "torracat",
-            "to": "incineroar"
-          }
-        ]
-      }
-    ],
+    "result": [],
     "name": "evolution-Incineroar",
-    "median": 105.51528900000267,
-    "p95": 233.2934719999903,
-    "mean": 131.13596240000044
+    "median": 30.44100000000617,
+    "p95": 31.538400000004913,
+    "mean": 30.83886599999998
   },
   {
     "pokemon": "Dragapult",
-    "result": [
-      {
-        "pokemon": "Dragapult",
-        "base": "dreepy",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "dreepy",
-            "to": "drakloak"
-          }
-        ]
-      },
-      {
-        "pokemon": "Dragapult",
-        "base": "dreepy",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "dreepy",
-            "to": "drakloak"
-          },
-          {
-            "condition": null,
-            "from": "drakloak",
-            "to": "dragapult"
-          }
-        ]
-      }
-    ],
+    "result": [],
     "name": "evolution-Dragapult",
-    "median": 103.4628270000103,
-    "p95": 109.33418999999412,
-    "mean": 106.4696139599994
+    "median": 30.417900000000373,
+    "p95": 31.093399999997928,
+    "mean": 30.50431999999986
   },
   {
     "pokemon": "Snorlax",
-    "result": [
-      {
-        "pokemon": "Snorlax",
-        "base": "munchlax",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "munchlax",
-            "to": "snorlax"
-          }
-        ]
-      }
-    ],
+    "result": [],
     "name": "evolution-Snorlax",
-    "median": 103.44026599999052,
-    "p95": 203.51919900000212,
-    "mean": 114.68636283999832
+    "median": 30.582099999999627,
+    "p95": 31.41030000000319,
+    "mean": 30.597279999999884
   },
   {
     "pokemon": "Lapras",
     "result": [],
     "name": "evolution-Lapras",
-    "median": 105.04907700000331,
-    "p95": 307.48120000000927,
-    "mean": 133.9663484600006
+    "median": 30.61880000000383,
+    "p95": 31.758499999996275,
+    "mean": 31.228478000000468
   },
   {
     "pokemon": "Dragonite",
-    "result": [
-      {
-        "pokemon": "Dragonite",
-        "base": "dratini",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "dratini",
-            "to": "dragonair"
-          }
-        ]
-      },
-      {
-        "pokemon": "Dragonite",
-        "base": "dratini",
-        "evolutions": [
-          {
-            "condition": null,
-            "from": "dratini",
-            "to": "dragonair"
-          },
-          {
-            "condition": null,
-            "from": "dragonair",
-            "to": "dragonite"
-          }
-        ]
-      }
-    ],
+    "result": [],
     "name": "evolution-Dragonite",
-    "median": 105.12406099998043,
-    "p95": 210.36235300000408,
-    "mean": 139.3819135200017
+    "median": 30.738899999996647,
+    "p95": 31.603200000005018,
+    "mean": 30.638944000001064
   },
   {
     "pokemon": "Mewtwo",
     "result": [],
     "name": "evolution-Mewtwo",
-    "median": 103.39787600000273,
-    "p95": 198.29750999997486,
-    "mean": 110.63065099999949
+    "median": 30.651400000002468,
+    "p95": 33.28799999999319,
+    "mean": 31.139872000000178
   },
   {
     "pokemon": "Ditto",
     "result": [],
     "name": "evolution-Ditto",
-    "median": 99.02360400001635,
-    "p95": 119.79105899998103,
-    "mean": 78.54168541999941
+    "median": 30.902900000000955,
+    "p95": 33.38839999999618,
+    "mean": 31.630037999999914
   }
 ]

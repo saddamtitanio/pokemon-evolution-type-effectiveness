@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "seed": "tsx scripts/seed-neo4j.ts",
+    "seed": "tsx scripts/seed.ts",
     "lint": "eslint"
   },
   "dependencies": {

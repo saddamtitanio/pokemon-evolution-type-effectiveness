@@ -1,5 +1,6 @@
 import json
 import os
+import numpy as np
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -375,4 +376,66 @@ plt.savefig(
 
 plt.close()
 
-print(f"Plots saved to: {PLOTS_DIR}")
+# --- MongoDB Benchmarks ---
+MONGO_RESULTS_DIR = os.path.abspath(os.path.join(BASE_DIR, "..", "mongodb", "results"))
+MONGO_PLOTS_DIR = os.path.abspath(os.path.join(BASE_DIR, "..", "mongodb", "plots"))
+os.makedirs(MONGO_PLOTS_DIR, exist_ok=True)
+
+# Load MongoDB files
+mongo_pokemon_file = os.path.join(MONGO_RESULTS_DIR, "pokemon_results.json")
+mongo_list_file = os.path.join(MONGO_RESULTS_DIR, "list_results.json")
+
+if os.path.exists(mongo_pokemon_file):
+    with open(mongo_pokemon_file) as f:
+        mongo_pokemon_data = json.load(f)
+    
+    mongo_pokemon_rows = []
+    for item in mongo_pokemon_data:
+        metrics = benchmark_metrics(item)
+        mongo_pokemon_rows.append({
+            "pokemon": item["pokemon"],
+            **metrics
+        })
+    mongo_pokemon_df = pd.DataFrame(mongo_pokemon_rows)
+    mongo_pokemon_df = mongo_pokemon_df.sort_values("mean", ascending=False)
+    
+    x = range(len(mongo_pokemon_df))
+    plt.figure(figsize=(18, 8))
+    plt.bar(x, mongo_pokemon_df["mean"], alpha=0.8, color="skyblue", label="Mean")
+    plt.plot(x, mongo_pokemon_df["median"], marker="o", linewidth=2, color="blue", label="Median")
+    plt.plot(x, mongo_pokemon_df["p95"], marker="x", linewidth=2, color="red", label="P95")
+    plt.xticks(x, mongo_pokemon_df["pokemon"], rotation=75, ha="right")
+    plt.title("MongoDB Pokemon Query Benchmark (findOne)")
+    plt.xlabel("Pokemon")
+    plt.ylabel("Latency (ms)")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(os.path.join(MONGO_PLOTS_DIR, "mongodb_pokemon_benchmark.png"), dpi=300)
+    plt.close()
+
+if os.path.exists(mongo_list_file):
+    with open(mongo_list_file) as f:
+        mongo_list_data = json.load(f)
+    
+    mongo_list_rows = []
+    for item in mongo_list_data:
+        metrics = benchmark_metrics(item)
+        mongo_list_rows.append({
+            "query": item["query"],
+            **metrics
+        })
+    mongo_list_df = pd.DataFrame(mongo_list_rows)
+    
+    plt.figure(figsize=(8, 6))
+    bars = plt.bar(["Mean", "Median", "P95"], [mongo_list_df["mean"].iloc[0], mongo_list_df["median"].iloc[0], mongo_list_df["p95"].iloc[0]], color=["skyblue", "blue", "red"])
+    plt.title("MongoDB List All Query Benchmark (find)")
+    plt.ylabel("Latency (ms)")
+    # Add values on top of bars
+    for bar in bars:
+        yval = bar.get_height()
+        plt.text(bar.get_x() + bar.get_width()/2.0, yval + 0.05, f"{yval:.2f} ms", ha='center', va='bottom')
+    plt.tight_layout()
+    plt.savefig(os.path.join(MONGO_PLOTS_DIR, "mongodb_list_benchmark.png"), dpi=300)
+    plt.close()
+
+print(f"Plots saved to: {PLOTS_DIR} and {MONGO_PLOTS_DIR}")
