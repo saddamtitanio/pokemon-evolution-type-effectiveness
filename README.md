@@ -117,4 +117,4 @@ Detailed design and system configuration documentation is available in the `docs
 ### Citations and AI Assistance Acknowledgement
 
 - Pokémon dataset sourced from the public repository [Purukitto/pokemon-data.json](https://github.com/Purukitto/pokemon-data.json).
-- AI Assistant was used exclusively to assist with script writing, plotting latency graphs, database seeding, drafting documentation files, and making the Dockerfile, .
+- AI Assistant was used exclusively to assist with script writing, plotting latency graphs, database seeding, drafting documentation files, and making the Dockerfile, Verification was done by running the code and logically visualized with the graph.
