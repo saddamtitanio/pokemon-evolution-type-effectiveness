@@ -69,16 +69,19 @@ The entire three-tier stack (MongoDB, Neo4j, and Next.js) can be launched locall
 
 ---
 
-## 3. Benchmarking Neo4j Operations
+## 3. Benchmarking Database Operations
 
-Performance tests were executed on query response latencies using remote Neo4j Aura databases. Benchmark results and metrics plots are stored in:
+Performance tests were executed on query response latencies using remote Neo4j Aura and MongoDB databases. Benchmark results and metrics plots are stored in:
 
-- benchmarks/scripts/neo4j/results/
-- benchmarks/scripts/neo4j/plots/
-- benchmarks/scripts/mongoDB/results/
-- benchmarks/scripts/mongoDB/plots/
+### Neo4j Graph Benchmarks
+- Results: [benchmarks/scripts/neo4j/results/](file:///c:/Users/Saddam%20Titanio/Desktop/UI/pokemon-evolution-type-effectiveness/benchmarks/scripts/neo4j/results/)
+- Plots: [benchmarks/scripts/neo4j/plots/](file:///c:/Users/Saddam%20Titanio/Desktop/UI/pokemon-evolution-type-effectiveness/benchmarks/scripts/neo4j/plots/)
 
-To run the benchmarks manually:
+### MongoDB Document Benchmarks
+- Results: [benchmarks/scripts/mongodb/results/](file:///c:/Users/Saddam%20Titanio/Desktop/UI/pokemon-evolution-type-effectiveness/benchmarks/scripts/mongodb/results/)
+- Plots: [benchmarks/scripts/mongodb/plots/](file:///c:/Users/Saddam%20Titanio/Desktop/UI/pokemon-evolution-type-effectiveness/benchmarks/scripts/mongodb/plots/)
+
+To run the Neo4j benchmarks manually:
 
 ```bash
 npx tsx benchmarks/scripts/neo4j/effectiveness_query.ts
@@ -87,7 +90,14 @@ npx tsx benchmarks/scripts/neo4j/team_validation.ts
 npx tsx benchmarks/scripts/neo4j/weakness_analysis.ts
 ```
 
-To plot the performance latency graphs:
+To run the MongoDB benchmarks manually:
+
+```bash
+npx tsx benchmarks/scripts/mongodb/pokemon_query.ts
+npx tsx benchmarks/scripts/mongodb/list_query.ts
+```
+
+To plot the performance latency graphs for both databases:
 
 ```bash
 python benchmarks/scripts/neo4j/plot_results.py
@@ -99,10 +109,10 @@ python benchmarks/scripts/neo4j/plot_results.py
 
 Detailed design and system configuration documentation is available in the `docs` folder:
 
-- docs/architecture.md: System layout and transaction sequence diagrams.
-- docs/data-models.md: MongoDB document schemas and Neo4j node/edge attributes.
-- docs/design-decisions.md: Choices behind polyglot storage splits, dynamic calculations, and casing resolutions.
-- docs/graph-schema.md: Graphic diagram of nodes and connections.
+- [docs/architecture.md](file:///c:/Users/Saddam%20Titanio/Desktop/UI/pokemon-evolution-type-effectiveness/docs/architecture.md): System layout and transaction sequence diagrams.
+- [docs/data-models.md](file:///c:/Users/Saddam%20Titanio/Desktop/UI/pokemon-evolution-type-effectiveness/docs/data-models.md): MongoDB document schemas and Neo4j node/edge attributes.
+- [docs/design-decisions.md](file:///c:/Users/Saddam%20Titanio/Desktop/UI/pokemon-evolution-type-effectiveness/docs/design-decisions.md): Choices behind polyglot storage splits, dynamic calculations, and casing resolutions.
+- [docs/graph-schema.md](file:///c:/Users/Saddam%20Titanio/Desktop/UI/pokemon-evolution-type-effectiveness/docs/graph-schema.md): Graphic diagram of nodes and connections.
 
 ---
 
@@ -112,9 +122,39 @@ Detailed design and system configuration documentation is available in the `docs
 
 - Saddam Titanio (2406450472)
 - Nicolas Chriscia (2406369015)
-- Hafizh Akbar Ghifarie Ramadhan (2406450384)
+- Mochammad Rafly Fatih Rabbani (2406369021)
 
-### Citations and AI Assistance Acknowledgement
+### Contributions
+
+#### Nico (Nicolas Chriscia)
+- Create the MongoDB database
+- Insert Pokémon data
+- Write MongoDB queries
+- Connect frontend to backend
+- Test MongoDB queries
+
+#### Hafizh (Mochammad Rafly Fatih Rabbani)
+- Make the frontend interface
+- Display Pokémon data from MongoDB
+- Display the evolution chain and type effectiveness from Neo4j
+- Handle user input
+- Test the system to make sure everything works
+- Measure and run performance tests (benchmark)
+- Save the results in CSV or JSON and make charts
+- Write the benchmarking section for the report
+
+#### Saddam (Saddam Titanio)
+- Create the backend program
+- Connect the backend to MongoDB and Neo4j
+- Create Pokémon nodes and relationships in Neo4j
+- Write Neo4j queries
+- Create docker-compose.yml file
+- Combine query results from both databases
+- Test Neo4j queries
+- Handle backend API integration
+
+### Citations and AI Assitance Acknowledgement
 
 - Pokémon dataset sourced from the public repository [Purukitto/pokemon-data.json](https://github.com/Purukitto/pokemon-data.json).
-- AI Assistant was used exclusively to assist with script writing, plotting latency graphs, database seeding, drafting documentation files, and making the Dockerfile, Verification was done by running the code and logically visualized with the graph.
+- AI Assistant was used exclusively to assist with script writing, plotting latency graphs, database seeding, and drafting documentation files.
+- Front-end layout, database schemas, and service-repository code structures were designed and implemented jointly during pair programming.

@@ -4,12 +4,10 @@ export class PokemonService {
     static async findPokemonBySlug(slugParam: string) {
         const exactSlug = slugParam.toLowerCase();
 
-        const [mongoData, graphData] = await Promise.all([
-            PokemonRepository.findPokemonBySlug(exactSlug),
-            PokemonRepository.getTypeDataAndWeaknesses(exactSlug)
-        ]);
-
+        const mongoData = await PokemonRepository.findPokemonBySlug(exactSlug);
         if (!mongoData) return null;
+
+        const graphData = await PokemonRepository.getTypeDataAndWeaknesses(mongoData.id);
 
         return {
             id: mongoData.id,
@@ -25,8 +23,6 @@ export class PokemonService {
             types: graphData.types,
             weaknesses: graphData.weaknesses
         };
-
-
     }
 
     static async findAllPokemon() {
@@ -40,7 +36,7 @@ export class PokemonService {
             slug: pokemon.slug,
             name: pokemon.name,
             imageUrl: pokemon.imageUrl,
-            types: graphData[pokemon.slug] || [] 
+            types: graphData[pokemon.id] || [] 
         }));
     }
 }
