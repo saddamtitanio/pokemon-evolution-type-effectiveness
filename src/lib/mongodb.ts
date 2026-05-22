@@ -1,23 +1,43 @@
-import { MongoClient } from "mongodb";
+import mongoose from "mongoose";
 
-declare global {
-  var _mongoClientPromise: Promise<MongoClient> | undefined;
+const MONGODB_URI = process.env.MONGODB_URI;
+if (!MONGODB_URI) {
+    throw new Error("Please define the MONGODB_URI environment variable inside .env");
 }
 
-const uri = process.env.MONGODB_URI;
-const options = {};
+let globalWithMongoose = global as typeof globalThis & {
+    mongoose: { conn: any; promise: any };
+};
 
-let client: MongoClient;
-let clientPromise: Promise<MongoClient>;
+let cached = globalWithMongoose.mongoose;
 
-if (!uri) {
-  throw new Error("Please add your Mongo URI to .env.local");
+if (!cached) {
+    cached = globalWithMongoose.mongoose = { conn: null, promise: null };
 }
 
-client = new MongoClient(uri, options);
-clientPromise = client.connect();
+async function connectDB() {
+    if (cached.conn) {
+        return cached.conn;
+    }
 
-// Export a module-scoped MongoClient promise. By doing this in a
-// separate module, the client can be shared across functions.
-export default clientPromise;
+    if (!cached.promise) {
+        const opts = {
+            bufferCommands: false,
+        };
 
+        cached.promise = mongoose.connect(MONGODB_URI!, opts).then((mongooseInstance) => {
+            return mongooseInstance;
+        });
+    }
+
+    try {
+        cached.conn = await cached.promise;
+    } catch (e) {
+        cached.promise = null;
+        throw e;
+    }
+
+    return cached.conn;
+}
+
+export default connectDB;
